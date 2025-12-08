@@ -1,0 +1,12 @@
+nav a{
+    margin-left: 10px;
+}
+Nav a.active {
+  color: red;
+}
+Nav a.pending {
+  color: blue;
+}
+Nav a.transitioning {
+  view-transition-name: my-transition;
+}
