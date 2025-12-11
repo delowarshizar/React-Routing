@@ -6,7 +6,7 @@ const PostDetail = () => {
     return (
         <div>
             <h1>title: {Post.title}</h1>
-            <p>{Post.body}</p>
+            <p> Detail {Post.body}</p>
         </div>
     );
 };
