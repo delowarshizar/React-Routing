@@ -12,6 +12,11 @@ const Post = ({ post }) => {
   const userData = fetch(
     `https://jsonplaceholder.typicode.com/posts/${id}`
   ).then((res) => res.json());
+
+   const [backHome, setBackHome] = useState(false)
+   if(backHome){
+    navigate('/')
+   }
   return (
     <div style={{ border: "1px solid red", margin: "10px", padding: "10px" }}>
       <h1>Title: {title}</h1>
@@ -27,6 +32,7 @@ const Post = ({ post }) => {
           <PostDetail2 userData={userData}></PostDetail2>
         </Suspense>
       )}
+      <button onClick={()=>setBackHome(true)}>Back To Home </button>
     </div>
   );
 };

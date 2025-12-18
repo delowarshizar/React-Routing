@@ -54,6 +54,10 @@ const router = createBrowserRouter([
     path: "app",
     Component: App,
   },
+  {
+    path: "*",
+    element: <div>404 Not Found</div>,
+  },
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
